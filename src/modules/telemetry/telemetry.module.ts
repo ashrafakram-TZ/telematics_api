@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { DevicesModule } from '../devices/devices.module';
 import { TelemetryMqttController } from './telemetry-mqtt.controller';
 import { TelemetryController } from './telemetry.controller';
-import { Telemetry } from './telemetry.entity';
+import { Telemetry } from './entites/telemetry.entity';
 import { TelemetryService } from './telemetry.service';
 
 @Module({

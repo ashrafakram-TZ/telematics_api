@@ -3,7 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { ILike, Repository } from 'typeorm';
 import { AppException } from '../../common/exceptions/app.exception';
 import { offset, paginate, Paginated } from '../../common/utils/paginate';
-import { Device } from './device.entity';
+import { Device } from './entites/device.entity';
 import { CreateDeviceDto } from './dto/create-device.dto';
 import { DeviceQueryDto } from './dto/device-query.dto';
 import { UpdateDeviceDto } from './dto/update-device.dto';

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Device } from './device.entity';
+import { Device } from './entites/device.entity';
 import { DevicesController } from './devices.controller';
 import { DevicesService } from './devices.service';
 

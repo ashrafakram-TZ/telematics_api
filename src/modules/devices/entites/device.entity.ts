@@ -1,5 +1,6 @@
+import { BaseEntity } from '../../../common/entities/base.entity';
 import { Column, Entity, Index } from 'typeorm';
-import { BaseEntity } from '../../common/entities/base.entity';
+
 
 @Entity('devices')
 @Index('UQ_devices_imei', ['imei'], { unique: true, where: 'deleted_at IS NULL' })

@@ -1,7 +1,7 @@
 import 'dotenv/config';
 import { DataSource } from 'typeorm';
-import { Device } from '../modules/devices/device.entity';
-import { Telemetry } from '../modules/telemetry/telemetry.entity';
+import { Telemetry } from '../modules/telemetry/entites/telemetry.entity';
+import { Device } from '../modules/devices/entites/device.entity';
 
 export default new DataSource({
   type: 'postgres',
@@ -11,6 +11,6 @@ export default new DataSource({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   ssl: process.env.DB_SSL === 'true',
-  entities: [Device, Telemetry],
+  entities: [Telemetry, Device],
   migrations: [`${__dirname}/migrations/*{.ts,.js}`],
 });

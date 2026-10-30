@@ -1,5 +1,6 @@
+import { Device } from '../../devices/entites/device.entity';
 import { Column, CreateDateColumn, Entity, Index, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { Device } from '../devices/device.entity';
+
 
 @Entity('telemetry')
 @Index('IDX_telemetry_device_recorded', { synchronize: false })

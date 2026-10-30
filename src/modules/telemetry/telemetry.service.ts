@@ -3,11 +3,11 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Between, DataSource, FindOperator, LessThanOrEqual, MoreThanOrEqual, Repository } from 'typeorm';
 import { AppException } from '../../common/exceptions/app.exception';
 import { offset, paginate, Paginated } from '../../common/utils/paginate';
-import { Device } from '../devices/device.entity';
 import { DevicesService } from '../devices/devices.service';
 import { TelemetryPayloadDto } from './dto/telemetry-payload.dto';
 import { TelemetryQueryDto } from './dto/telemetry-query.dto';
-import { Telemetry } from './telemetry.entity';
+import { Telemetry } from './entites/telemetry.entity';
+import { Device } from '../devices/entites/device.entity';
 
 @Injectable()
 export class TelemetryService {
